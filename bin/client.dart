@@ -51,7 +51,7 @@ void spawnClient(List<dynamic> values) async {
   client.listen(printBytesToString);
 
   while (true) {
-    // await Future.delayed(const Duration(milliseconds: 8));
+    await Future.delayed(const Duration(milliseconds: 8));
     client.add("${messages[index]} ${count++}".codeUnits);
   }
 }
